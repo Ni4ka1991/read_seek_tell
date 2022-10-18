@@ -6,8 +6,7 @@ class someByteObj:
     
     
     def read( self, quantity ):
-        if quantity == 1:
-            print( self.dim[0] ) 
+        print( hex( self.dim[ quantity ] )) 
     
     def seek():
         pass
@@ -15,12 +14,8 @@ class someByteObj:
     def tell():
         pass
     
-    def edit( self, x, b ):
-        
-        if x < len( self.dim ):
-            self.dim[x] = b
-        else:
-            print( "Some error occurred!!" )
+    def edit( self, b ):
+        self.dim = self.dim + b
     
     def __str__( self ):
         return f"My print >>> {self.dim }"

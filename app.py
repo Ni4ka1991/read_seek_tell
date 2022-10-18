@@ -16,4 +16,9 @@ read_by_10( f )
 '''
 b = someByteObj(5)
 print(b)
-#b.read(1)
+nb = b'\x05\x97\xa3'
+b.edit( nb )
+print( f" edited b >>> {b} " )
+print( "*"*10 )
+
+b.read(6)
