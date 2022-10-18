@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 from os import system
-
+from byte_object import *
+'''
 f = open('text.txt' , 'br' )
 
 # Pavel's solution >>>
@@ -12,4 +13,7 @@ def read_by_10( file_obj ):
         i = file_obj.read(10)
 
 read_by_10( f )
-
+'''
+b = someByteObj(5)
+print(b)
+#b.read(1)
