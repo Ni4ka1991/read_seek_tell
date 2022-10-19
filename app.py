@@ -14,11 +14,18 @@ def read_by_10( file_obj ):
 
 read_by_10( f )
 '''
+system("clear")
 b = someByteObj(5)
 print(b)
 nb = b'\x05\x97\xa3'
 b.edit( nb )
-print( f" edited b >>> {b} " )
+print( f"edited b >>> {b} " )
 print( "*"*10 )
 
+b.read()
+b.read(2)
 b.read(6)
+print()
+print("There will be an Error >>>")
+print()
+b.read(23)
