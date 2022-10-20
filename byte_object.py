@@ -8,15 +8,15 @@ class someByteObj:
     def read( self, quantity = None ):
         
         if quantity == None:
-            print( self.dim )
+            return self.dim
         
         elif( quantity > len( self.dim )):
-            raise ValueError( "Your number out of range" )
+            return self.dim
         
         else:
             i = 0
             while i <= quantity:
-                print( hex(self.dim[i] ), end = '' )
+                return ( hex(self.dim[i] ))
                 i += 1
             print()
 
