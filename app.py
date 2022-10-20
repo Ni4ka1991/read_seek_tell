@@ -3,31 +3,13 @@ from os import system
 from byte_object import *
 from helper_func import *
 
-f = open('text.txt' , 'br' )
-
+#f = open('text.txt' , 'br' )
 #read_by_10( f )
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
-f.read()
+#createBinFile(40000)
+#f.close()
 
-
+f = open( 'img_01.jpg', 'br' )
+print( type(f))
 
 
 '''
