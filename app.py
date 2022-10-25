@@ -10,6 +10,7 @@ from helper_func import *
 
 f = open( 'img_01.jpg', 'br' )
 print( type(f))
+print( type(f.read()))
 
 
 '''
